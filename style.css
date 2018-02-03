@@ -28,9 +28,9 @@ a.name:hover {
 	left: 0;
 	right: 0;
 	font-family: Courier New;
-	border: 1px solid white;
+	border: 1px double white;
 	font-size: 2.5em;
-	color: yellow;
+	color: white;
 	font-weight: normal;
 	width: 50%;
 	text-align: center;
