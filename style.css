@@ -28,7 +28,25 @@ a.name:hover {
 	left: 0;
 	right: 0;
 	font-family: Courier New;
-	border: 1px double white;
+	border: 1px solid white;
+	font-size: 2.5em;
+	color: yellow;
+	font-weight: normal;
+	width: 50%;
+	text-align: center;
+	display:block;
+	background-color:hsla(9, 100%, 64%, 0);
+}
+a.name:visited {
+	text-decoration: none;
+	position: absolute;
+	top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	font-family: Courier New;
+	border: 1px solid white;
 	font-size: 2.5em;
 	color: white;
 	font-weight: normal;
