@@ -113,7 +113,7 @@ function render() {
 	scene.traverse( function( object ) {
 		if ( object.isMesh === true ) {
 			object.rotation.x = timer * 5;
-			object.rotation.y = timer * 2.5;
+			//object.rotation.y = timer * 2.5;
 		}
 	} );
 	renderer.render( scene, camera );
