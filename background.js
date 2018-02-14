@@ -46,7 +46,7 @@ function init() {
 	scene.add( camera );
 	var objectMaterial = new THREE.MeshStandardMaterial( { color: 0xffffff, roughness: 0.8, metalness: 0.5 } );
 
-	var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.8 );
+	var ambientLight = new THREE.AmbientLight( 0xcccccc, 1 );
 	scene.add( ambientLight );
 
 	var x = 0, y = 0;
