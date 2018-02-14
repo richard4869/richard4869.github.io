@@ -93,7 +93,7 @@ function render() {
 	//camera.position.z = Math.sin( timer ) * 800;
 	camera.lookAt( scene.position );
 
-	var z = 20, d = 200;
+	var z = 20, d = 50;
 
 	light1.position.x = Math.sin( timer * 0.7 ) * d;
 	light1.position.z = Math.cos( timer * 0.3 ) * d;
