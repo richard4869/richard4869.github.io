@@ -9,7 +9,6 @@ function init() {
 	var container = document.getElementById( 'container' );
 
 	camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-	camera.position.y = 40;
 	camera.position.z = 40;
 	scene = new THREE.Scene();
 	var light, object;
