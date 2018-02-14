@@ -86,7 +86,7 @@ function animate() {
 function render() {
 	var timer = Date.now() * 0.0001;
 
-	camera.position.x = Math.cos( timer ) * 800;
+	//camera.position.x = Math.cos( timer ) * 800;
 	//camera.position.z = Math.sin( timer ) * 800;
 	camera.lookAt( scene.position );
 
