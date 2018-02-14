@@ -9,7 +9,7 @@ function init() {
 	var container = document.getElementById( 'container' );
 
 	camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-	camera.position.z = 40;
+	camera.position.y = 40;
 	scene = new THREE.Scene();
 	var light, object;
 
@@ -87,7 +87,7 @@ function render() {
 	var timer = Date.now() * 0.0001;
 
 	camera.position.x = Math.cos( timer ) * 800;
-	camera.position.z = Math.sin( timer ) * 800;
+	//camera.position.z = Math.sin( timer ) * 800;
 	camera.lookAt( scene.position );
 
 	var z = 20, d = 200;
