@@ -39,31 +39,12 @@ function init() {
 	light6 = new THREE.PointLight( c6, intensity, distance, decay );
 	scene.add( light6 );
 
-	var dlight = new THREE.DirectionalLight( 0xffffff, 0.05 );
-	dlight.position.set( 0.5, 1, 0 ).normalize();
-	scene.add( dlight );
 
 	scene.add( camera );
 	var objectMaterial = new THREE.MeshStandardMaterial( { color: 0xffffff, roughness: 0.8, metalness: 0.5 } );
 
-	var ambientLight = new THREE.AmbientLight( 0xcccccc );
-	scene.add( ambientLight );
 
-	var x = 0, y = 0;
-
-	var heartShape = new THREE.Shape();
-
-	heartShape.moveTo( x + 5, y + 5 );
-	heartShape.bezierCurveTo( x + 5, y + 5, x + 4, y, x, y );
-	heartShape.bezierCurveTo( x - 6, y, x - 6, y + 7,x - 6, y + 7 );
-	heartShape.bezierCurveTo( x - 6, y + 11, x - 3, y + 15.4, x + 5, y + 19 );
-	heartShape.bezierCurveTo( x + 12, y + 15.4, x + 16, y + 11, x + 16, y + 7 );
-	heartShape.bezierCurveTo( x + 16, y + 7, x + 16, y, x + 10, y );
-	heartShape.bezierCurveTo( x + 7, y, x + 5, y + 5, x + 5, y + 5 );
-
-	var geometry = new THREE.ShapeGeometry( heartShape );
-	object = new THREE.Mesh( geometry, objectMaterial );
-	//object = new THREE.Mesh( new THREE.BoxGeometry( 100, 100, 100), objectMaterial );
+	object = new THREE.Mesh( new THREE.BoxGeometry( 100, 100, 100), objectMaterial );
 	object.position.set(  0, 0, 0 );
 	scene.add( object );
 
@@ -89,8 +70,8 @@ function animate() {
 function render() {
 	var timer = Date.now() * 0.0001;
 
-	//camera.position.x = Math.cos( timer ) * 800;
-	//camera.position.z = Math.sin( timer ) * 800;
+	camera.position.x = Math.cos( timer ) * 800;
+	camera.position.z = Math.sin( timer ) * 800;
 	camera.lookAt( scene.position );
 
 	var z = 20, d = 100;
@@ -115,7 +96,7 @@ function render() {
 
 	scene.traverse( function( object ) {
 		if ( object.isMesh === true ) {
-			//object.rotation.x = timer * 5;
+			object.rotation.x = timer * 5;
 			object.rotation.y = timer * 2.5;
 		}
 	} );
