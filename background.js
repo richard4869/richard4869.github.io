@@ -13,9 +13,9 @@ function init() {
 	scene = new THREE.Scene();
 	var light, object;
 
-	var intensity = 1.0;
+	var intensity = 0.5;
 	var distance = 200;
-	var decay = 2.0;
+	var decay = 1.0;
 
 	var c1 = 0xff0040, c2 = 0x0040ff, c3 = 0x80ff80, c4 = 0xffaa00, c5 = 0x00ffaa, c6 = 0xff1100;
 
