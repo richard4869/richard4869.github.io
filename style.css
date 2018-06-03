@@ -1,7 +1,9 @@
 body {
-    background-image: url("./source/images/background.jpg");
+    background-color: black;
+    margin: 0px;
 }
-a.name:link {
+a.name:link 
+{
 	text-decoration: none;
 	position: absolute;
 	top: 200px;
@@ -10,16 +12,18 @@ a.name:link {
 	left: 0;
 	right: 0;
 	font-family: Courier New;
-	border: 1px solid white;
+	border: 1px  solid #cccccc;
 	font-size: 2.5em;
-	color: white;
+	color: #cccccc;
 	font-weight: normal;
 	width: 50%;
 	text-align: center;
 	display:block;
 	background-color:hsla(9, 100%, 64%, 0);
 }
-a.name:hover {
+
+a.name:visited 
+{
 	text-decoration: none;
 	position: absolute;
 	top: 200px;
@@ -28,16 +32,18 @@ a.name:hover {
 	left: 0;
 	right: 0;
 	font-family: Courier New;
-	border: 1px double white;
+	border: 1px  solid #cccccc;
 	font-size: 2.5em;
-	color: white;
+	color: #cccccc;
 	font-weight: normal;
 	width: 50%;
 	text-align: center;
 	display:block;
 	background-color:hsla(9, 100%, 64%, 0);
 }
-a.name:visited {
+
+a.name:hover 
+{
 	text-decoration: none;
 	position: absolute;
 	top: 200px;
@@ -46,15 +52,16 @@ a.name:visited {
 	left: 0;
 	right: 0;
 	font-family: Courier New;
-	border: 1px solid white;
+	border: 1px double #a1b4c6;
 	font-size: 2.5em;
-	color: white;
+	color: #a1b4c6;
 	font-weight: normal;
 	width: 50%;
 	text-align: center;
 	display:block;
 	background-color:hsla(9, 100%, 64%, 0);
 }
+
 body {
-	margin: 0px;
+	
 	}
