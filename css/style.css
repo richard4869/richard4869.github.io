@@ -5,6 +5,7 @@ body {
     font-weight: 400;
   	font-size: 15px;
   	line-height: 1.8;
+  	color: #cacebe;
 }
 a.entrance:link 
 {
@@ -71,12 +72,30 @@ a.entrance:hover
 h1{
 	color: #ebf7be;
 	font-family: 'Rajdhani', sans-serif;
+	font-size: 2.5em;
+	padding-left: 10px;
 }
 
 h2.card-title{
-	color: #ebf7be;
+	color: #ff652f;
 	font-size: 1.5em;
 	margin: 0;
+}
+
+h2.card-title:hover{
+	color: #0cc4fa;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+h2{
+	color: #f9bbf7;
+	font-size: 1.5em;
+}
+
+h3{
+	color: #919191;
+	font-size: 1em;
 }
 
 h5{
