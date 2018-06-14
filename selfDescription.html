@@ -77,11 +77,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           </section>
           <!--about-->
           <section class="colorlib-about" data-section="about">
-            <h1>Hi</h1>
+            <div class="jumbotron-fluid">
+              <h1>Hi, I am Richard Yang.</h1>
+            </div>
           </section>
           <!--education-->
           <section class="colorlib-education" data-section="education">
-            
+              <h1>
+                
+              </h1>
+              <p>
+                
+              </p>
           </section>
           <!--experience-->
           <section class="colorlib-experience" data-section="experience">
@@ -89,7 +96,80 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           </section>
           <!--projects-->
           <section class="colorlib-projects" data-section="projects">
-            
+
+            <div id="accordion">
+              <!--project_1-->
+              <div class="card mb-0">
+                <div class="card-header collapsed"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="headingOne">
+                  <h2 class="card-title">
+                      Ray tracer
+                  </h2>
+                </div>
+                <div class="card-body" >
+                  <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+                  <ul style="list-style-type:disc">
+                    <li>
+                      Developed a ray tracer program written by C++ with functions including recursive reflection and refraction, texture mapping, CSG, anti-aliasing(supersampling). Accelerated the program using BoundingBox.
+                    </li>
+                    <li>
+                      Implemented photon mapping as global illumination method instead of Phong Illumination with unique features like diffuse reflection and subsurface scattering to achieve advanced graphic features like god ray and skin texture.
+                    </li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+
+              <!--project_2-->
+              <div class="card mb-0">
+                <div class="card-header collapsed"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" id="headingTwo">
+                  <h2 class="card-title">
+                      Dynamic Journal
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <ul style="list-style-type:disc">
+                      <li>
+                        Collaborated in a team of 4 to develop a content management mobile application using JavaScript and Typescript, and used MVC and Observer as design pattern.
+                      </li>
+                      <li>
+                        Designed “card” based user interface using Ionic JS, arranged the page elements with HTML5 and CSS.
+                      </li>
+                      <li>
+                        Accessed the Google Map api to provide location service.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--project 3-->
+              <div class="card mb-0">
+                <div class="card-header collapsed"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" id="headingThree">
+                  <h2 class="card-title">
+                      OS 161
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+                    <ul style="list-style-type:disc">
+                      <li>
+                        Designed and built a simplified operating system in C.
+                      </li>
+                      <li>
+                        Ran a traffic simulation with multi-threading synchronization methods like lock and semaphore.
+                      </li>
+                      <li>
+                        Implemented system call like sys_fork,sys_exit and execv to achieve inter-process management.
+                      </li>
+                      <li>
+                        Optimized the memory access efficiency using memory paging and segmentation.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </section>
           <!--Contact-->
           <section class="colorlib-contact" data-section="contact">

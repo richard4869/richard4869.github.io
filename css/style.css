@@ -1,6 +1,10 @@
 body {
     background-color: black;
     margin: 0px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+  	font-size: 15px;
+  	line-height: 1.8;
 }
 a.entrance:link 
 {
@@ -62,12 +66,20 @@ a.entrance:hover
 	background-color:hsla(9, 100%, 64%, 0);
 }
 
+
+
 h1{
-	color: ;
+	color: #ebf7be;
+	font-family: 'Rajdhani', sans-serif;
 }
 
-a.name{
-	
+h2.card-title{
+	color: #ebf7be;
+	font-size: 1.5em;
+	margin: 0;
+}
+
+h5{
 
 }
 
@@ -213,7 +225,8 @@ a {
   @media screen and (max-width: 768px) {
     #colorlib-main {
       width: 100%;
-      padding: 0 1em; } }
+      padding: 0 1em; } 
+   	}
 
 #colorlib-hero {
   min-height: 500px;
@@ -221,7 +234,27 @@ a {
   width: 100%;
   float: left;
   margin-bottom: 10em;
-  clear: both; }
+  clear: both; 
+}
+
+.card{
+	border:none;
+}
+
+.card-header{
+	padding: 10px 15px;
+  display: block;
+  background-color: #212121;
+  margin: 0;
+}
+
+.card-body {
+	padding: 0px;
+  display: block;
+  background-color: black;
+  color: #cacebe;
+  font-family: 'Rajdhani', sans-serif;
+}
 
 .colorlib-experience,
 .colorlib-skills,
