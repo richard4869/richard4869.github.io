@@ -141,6 +141,24 @@ a {
       transform: translateX(-300px);
       padding-top: 4em; } }
 
+#colorlib-aside .author-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; 
+}
+
+.author-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
 #colorlib-aside #colorlib-main-menu {
     display: block;
     width: 100%; 
@@ -265,6 +283,7 @@ a {
   display: block;
   background-color: #212121;
   margin: 0;
+  border-bottom: 1px solid #686868;
 }
 
 .card-body {
@@ -288,3 +307,13 @@ a {
   clear: both;
   width: 100%;
   display: block; }
+
+  ul {
+    list-style: outside disc;
+    margin-left: 1em;
+}
+ul li {
+    position: relative;
+    left: 1em;
+    padding-right: 1em;    
+}​
