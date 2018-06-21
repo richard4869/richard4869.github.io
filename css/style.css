@@ -308,12 +308,12 @@ a {
   width: 100%;
   display: block; }
 
-  ul {
+ul {
     list-style: outside disc;
-    margin-left: 1em;
+    margin-left: 0px;
 }
 ul li {
+		padding:0px;
     position: relative;
-    left: 1em;
-    padding-right: 1em;    
+    left: 0px;   
 }​
