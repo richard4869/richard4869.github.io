@@ -82,18 +82,6 @@ h1{
 	padding-bottom:20px;
 }
 
-h2.card-title{
-	color: #ff652f;
-	font-size: 1.5em;
-	margin: 0;
-}
-
-h2.card-title:hover{
-	color: #0cc4fa;
-	font-size: 1.5em;
-	margin: 0;
-}
-
 h2{
 	color: #f9bbf7;
 	font-size: 1.5em;
@@ -131,7 +119,7 @@ a {
   float: left;
   width: 300px;
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: hidden;
   z-index: 1001;
   background: #110c0f;
   -webkit-transition: 0.5s;
@@ -290,6 +278,23 @@ a {
   background-color: #212121;
   margin: 0;
   border-bottom: 1px solid #686868;
+  
+}
+.header-wrapper{
+	cursor: pointer;
+}
+.header-wrapper h2{
+	color: #ff652f;
+  font-size: 1.5em;
+	margin: 0;
+}
+.header-wrapper:hover h2{
+	color: #0cc4fa;
+	font-size: 1.5em;
+	margin: 0;
+}
+.header-wrapper span{
+	color: #727272;
 }
 
 .card-body {
@@ -299,6 +304,11 @@ a {
   color: #cacebe;
   font-family: 'Rajdhani', sans-serif;
 }
+.colorlib-narrow-content {
+  padding: 0 2.5em; }
+  @media screen and (max-width: 768px) {
+    .colorlib-narrow-content {
+      padding: 0; } }
 
 .colorlib-experience,
 .colorlib-skills,
@@ -323,3 +333,67 @@ ul li {
     position: relative;
     left: 0px;   
 }​
+
+.progress-wrap h3 {
+  font-size: 16px;
+  font-family: "Rajdhani", Arial, sans-serif;
+  margin-bottom: 10px; 
+	}
+
+.progress {
+  height: 6px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #f2f3f7;
+  overflow: visible; 
+}
+
+.progress-bar {
+  background: #2c98f0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #000;
+  font-weight: 600;
+  text-align: right;
+  position: relative;
+  overflow: visible;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px; }
+  .progress-bar:after {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #2c98f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .progress-bar span {
+    position: absolute;
+    top: -22px;
+    right: 0; }
+  .progress-bar.color-1 {
+    background: #0cc4fa; }
+    .progress-bar.color-1:after {
+      background: #0cc4fa; }
+    .progress-bar.color-1 span {
+      color: #0cc4fa; }
+  .progress-bar.color-2 {
+    background: #ff652f; }
+    .progress-bar.color-2:after {
+      background: #ff652f; }
+    .progress-bar.color-2 span {
+      color: #ff652f; }
+  .progress-bar.color-3 {
+    background: #ff70b5; }
+    .progress-bar.color-3:after {
+      background: #ff70b5; }
+    .progress-bar.color-3 span {
+      color: #ff70b5; }
